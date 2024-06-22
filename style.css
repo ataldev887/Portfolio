@@ -404,6 +404,7 @@ section{
     width: 70%;
     margin: auto;
     margin-top: 2rem;
+    justify-content: center;
 }
 .skills .container .row{
     display: grid;
@@ -434,9 +435,10 @@ section{
 .projects{
     background-color: var(--second-bg-color);
 }
-.projects-box{
+.project-box{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
     place-items: center;
     gap: 3rem;
     row-gap: 5rem;
