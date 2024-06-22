@@ -393,13 +393,49 @@ section{
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
 }
+.skills{
+    background-color: var(--bg-color);
+}
+.skills .container{
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+.skills .container .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--second-bg-color);
+    box-shadow: 0 4px 10px var(--main-color) ;
+    transition: 0.3s ease;
+}
+.skills .container .bar:hover{
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.05);
+}
+.skills .container .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.5rem;
+}
 .projects{
     background-color: var(--second-bg-color);
 }
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(3,1fr);
     place-items: center;
     gap: 3rem;
     row-gap: 5rem;
