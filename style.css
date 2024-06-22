@@ -409,7 +409,8 @@ section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 2.8rem;
+    justify-content: center;
 }
 .skills .container .bar{
     margin-bottom: 15px;
@@ -428,7 +429,7 @@ section{
     font-weight: 500;
     align-items: center;
     text-align: center;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 .projects{
     background-color: var(--second-bg-color);
