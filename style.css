@@ -75,26 +75,6 @@ span{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-.gradient-btn{
-    font-size: 1.8rem;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    background: linear-gradient(
-        270deg,
-        #DF8908 10%,
-        #ff1d15 100%
-    );
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: 0.3s ease-in-out;
-    color: white;
-    border: none;
-    text-wrap: nowrap;
-}
-.gradient-btn:hover{
-    transform: scale(1.25);
-}
-
 section{
     min-height: 100vh;
     padding: 10rem 15%;
@@ -502,6 +482,13 @@ section{
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
+}
+.contact--message{
+    position: absolute;
+    left: 45%;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-color);
 }
 .footer{
     background-color: var(--second-bg-color);
