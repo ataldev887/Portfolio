@@ -18,12 +18,12 @@ pipeline{
         git branch: 'main', url: 'https://github.com/Yatingambhir85/Portfolio'
       }
     }
-    stage("Sonar analysis"){
-      steps{
-        withSonarQubeEnv('sonarqube'){
-          sh ' $SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=practice-portfolio -Dsonar.projectKey=practice-portfolio'
+    stage("Sonarqube analysis"){
+        steps{
+            withSonarQubeEnv('sonarqube'){
+                sh ' $SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=practice-portfolio -Dsonar.projectKey=practice-portfolio '
+            }
         }
-      }
     }
   }
 }
