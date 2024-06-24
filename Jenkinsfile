@@ -5,7 +5,7 @@ pipeline{
       nodejs 'node18'
     }
   environment{
-    SONAR_HOME=tool 'sonarqube'
+    SONAR_HOME=tool 'sonar-scanner'
   }
   stages{
     stage("Clean Workspace"){
