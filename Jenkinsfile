@@ -21,7 +21,7 @@ pipeline{
     stage("Sonar analysis"){
       steps{
         withSonarQubeEnv('sonarscanner'){
-          sh '$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=practice-portfolio -Dsonar.projectKey=practice-portfolio'
+          sh ' $SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=practice-portfolio -Dsonar.projectKey=practice-portfolio'
         }
       }
     }
