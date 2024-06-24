@@ -5,7 +5,7 @@ pipeline{
       nodejs 'node18'
     }
   environment{
-    SONAR_HOME=tool 'sonar'
+    SONAR_HOME=tool 'sonarqube'
   }
   stages{
     stage("Clean Workspace"){
@@ -20,7 +20,7 @@ pipeline{
     }
     stage("Sonarqube analysis"){
         steps{
-            withSonarQubeEnv('sonar'){
+            withSonarQubeEnv('sonarqube'){
                 sh ' $SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=practice-portfolio -Dsonar.projectKey=practice-portfolio '
             }
         }
